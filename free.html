@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rainbow</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 200px;
+            margin-left: 50px;
+           
+
+        }
+        button{
+            height: 40px;
+            width:140px;
+            border-radius:30%
+        }
+        button:hover{
+            transform: scale(2.0,2.0)
+        }
+    </style>
+    
+    <button >click the button</button>
+
+    
+
+<script >
+    const button=document.querySelector("button");
+    const body=document.querySelector("body");
+    const color=['royal blue','pink','purple','blue','limegreen','skyblue'];
+    body.style.backgroundColor='aqua';
+    document.addEventListener('click',function(){
+        const colorIndex=parseInt(Math.random()*color.length);
+        body.style.backgroundColor=color[colorIndex];
+
+    });
+
+</script>
+</body>
+</html>
